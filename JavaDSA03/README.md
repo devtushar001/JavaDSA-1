@@ -22,3 +22,30 @@ n [1,2,3,0,0,0], m [2,5,6]
        }
     }
 } --> two pointer questions
+
+class Solution {
+    public void rotate(int[] nums, int k) {
+        // brute force goes out of range lte problem.
+        k = k%nums.length;
+
+        // reverse(nums, 0, nums.length-1);
+        // reverse(nums, 0, k-1);
+       //  reverse(nums, k, nums.length-1);
+
+        public void reverse(int[] arr, int i, int j) {
+            while(i < j) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }         
+    }
+} -- 189 leatcode question
+
+
+next homework,
+   1) 121 
+   2) 26
+   3) 405
