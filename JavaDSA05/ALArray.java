@@ -19,23 +19,36 @@ public class ALArray {
     ArrList.add(3);
     ArrList.add(4);
 
-    System.out.println(ArrList); // printing array with stored data
-    System.out.println(ArrList.size()); // checking size
+    // System.out.println(ArrList); // printing array with stored data
+    // System.out.println(ArrList.size()); // checking size
 
-    ArrList.add(2, 5);// index, value (example of method overloading// number of parameter or change
-                      // type of parameter)
-    System.out.println(ArrList);
+    // ArrList.add(2, 5);// index, value (example of method overloading// number of
+    // parameter or change
+    // type of parameter)
+    // System.out.println(ArrList);
     // System.out.println(ArrList[i]); //error
 
-    System.out.println(ArrList.get(3));
-    ArrList.add(0, 10);
-    System.out.println(ArrList);
+    // System.out.println(ArrList.get(3));
+    // ArrList.add(0, 10);
+    // System.out.println(ArrList);
 
-    ArrList.remove(3); //Pass index
+    // ArrList.remove(3); // Pass index
 
-    System.out.println(ArrList.remove(3)); //4
+    // System.out.println(ArrList.remove(3)); //4
 
     // add(index, value) get(index) size() remove(index)
-    
+    // System.out.println(ArrList.get(5));//Exception
+
+    // System.out.println(ArrList.remove(5)); // Exception
+
+    // System.out.println(ArrList.isEmpty()); // false
+
+    // System.out.println(ArrList.contains(10)); //true
+    // System.out.println(ArrList.contains(11)); //false
+
+    for (int i = 0; i < ArrList.size(); i++) {
+      System.out.println(ArrList.get(i));
+    }
+
   }
 }
